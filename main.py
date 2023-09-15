@@ -20,9 +20,7 @@ def hashDups(lists):
     for i in range(len(lists)):
         newTuple = tuple(sorted(lists[i]))
         myDict.update({newTuple: i})
-    print(myDict)
-    finalList = myDict.keys()
-    return finalList
+    return myDict.keys()
 
 
 
